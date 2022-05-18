@@ -26,6 +26,11 @@ body {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
 }
 
+#logo #otavie_logo{
+  filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
+  //filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
+}
+
 #logo img {
   position: absolute;
   width: 180px;
@@ -215,8 +220,12 @@ nav ul li a {
     height: 100vh;
     width: 100vw;
     background-color: #7e535e;
-    
   }
+
+  #logo #otavie_logo{
+    filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
+  }
+  
 
   nav ul{
     display: flex;
