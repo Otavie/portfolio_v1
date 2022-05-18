@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    81.18% 74.32% at 72.22% 50%,
+    #ee6285 0%,
+    rgba(238, 98, 133, 0) 100%
+  );
+}
+
+#header {
+  position: absolute;
+  width: 100vw;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 250, 0.1);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+#logo img {
+  position: absolute;
+  width: 180px;
+  top: 12px;
+  left: 70px;
+}
+
+nav ul {
+  display: flex;
+  float: right;
+  margin-right: 70px;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 60px;
+  margin: 0 15px;
+}
+nav ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+#landing_page {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing_content {
+  margin-top: 60px;
+  align-self: center;
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#inner_landing_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;  
+}
+
+.otavie{
+  position: absolute;
+  height: 260px;
+  width: 260px;
+}
+
+#o{
+  height: 330px;
+  width: 330px;
+  z-index: -1;
+}
+
+#landing_photo{
+  z-index: -2;
+}
+
+#righthand_content{
+  display: flex;
+  flex-direction: column;
+}
+
+#righthand_content #welcome h3{
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 0px 0px 1px #fff;
+}
+
+#righthand_content #my_name h1{
+  font-family: 'Oxanium', cursive; 
+  font-size: 100px;
+  font-weight: 300;
+  text-shadow: 0px 0px 1.5px rgb(8, 96, 113);
+}
+
+#righthand_content #my_title h4{
+  font-family: 'Oxanium', cursive; 
+  color: #fff;
+}
+
+#righthand_content #my_work button{
+  font-family: 'Oxanium', cursive; 
+  width: 135px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-shadow: 0px 1px 0px #fff;
+  background: #A37781;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25), -2px -2px 20px rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 200ms;
+}
+
+#righthand_content #my_work button:hover{
+  transform: translateY(5%);
+  background: #ee6285;
+}
+
+#righthand_content #welcome, #righthand_content #my_name{
+  margin-left: 20px;
+}
+
+#righthand_content #my_title{
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+#righthand_content #my_title, #righthand_content #my_work{
+  display: flex;
+  justify-content: right;
+}
+
+@media screen and (max-width: 800px) {
+  #inner_landing_content{
+    height: 300px;
+    width: 300px;  
+  }
+  
+  .otavie{
+    height: 240px;
+    width: 240px;
+  }
+  
+  #o{
+    height: 300px;
+    width: 300px;
+  }
+
+  #righthand_content #welcome, #righthand_content #my_name{
+    margin-left: 12px;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 90px;
+  }
+  
+}
+
+@media screen and (max-width: 769px) {
+  #inner_landing_content{
+    height: 300px;
+    width: 300px;  
+  }
+  
+  .otavie{
+    height: 240px;
+    width: 240px;
+  }
+  
+  #o{
+    height: 300px;
+    width: 300px;
+  }
+
+  #righthand_content #welcome, #righthand_content #my_name{
+    margin-left: 12px;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    background-color: red;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .88);
+    
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    text-align: center;
+    top: 140px;
+
+    li{
+      width: 140px;
+      height: 100px;
+      display: block;
+      a{
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        background: radial-gradient(81.18% 74.32% at 72.22% 50%,#ee6285 0%,rgba(236, 227, 230, 0) 100%);
+    
+    background-clip: text;
+    text-fill-color: transparent;
+      }
+    }
+
+    
+  }
+
+  #check{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 12px;
+    right: 40px;
+  }
+
+  .fa.fa-bars{
+    position: absolute;
+    top: 9.5px;
+    right: 40px;
+    font-size: 35px;
+    color: red;
+  }
+
+  #inner_landing_content{
+    height: 280px;
+    width: 280px;  
+  }
+  
+  .otavie{
+    height: 220px;
+    width: 220px;
+  }
+  
+  #o{
+    height: 280px;
+    width: 280px;
+  }
+
+  #righthand_content #welcome, #righthand_content #my_name{
+    margin-left: 12px;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 80px;
+  }
+
+  #righthand_content #my_work button{
+    width: 120px;
+    font-size: 18px;
+  }
+
+  #righthand_content #my_title{
+    font-size: 17px;
+  }
+
+  #righthand_content #welcome h3{
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  body{
+    background-color: green;
+  }
+
+  #inner_landing_content{
+    height: 240px;
+    width: 240px;  
+  }
+  
+  .otavie{
+    height: 180px;
+    width: 180px;
+  }
+  
+  #o{
+    height: 240px;
+    width: 240px;
+  }
+
+}
+
+@media screen and (max-width: 610px) {
+  body{
+    background-color: blueviolet;
+  }
+
+  #inner_landing_content{
+    height: 220px;
+    width: 220px;  
+  }
+  
+  .otavie{
+    height: 170px;
+    width: 170px;
+  }
+  
+  #o{
+    height: 220px;
+    width: 220px;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 60px;
+  }
+
+  #righthand_content #my_title{
+    margin-top: -18px;
+  } h4{
+    font-size: 16px;
+  }
+
+  #righthand_content #welcome, #righthand_content #my_name{
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body{
+    background-color: yellow;
+  }
+
+  #inner_landing_content{
+    height: 210px;
+    width: 210px;  
+  }
+  
+  .otavie{
+    height: 150px;
+    width: 150px;
+  }
+  
+  #o{
+    height: 200px;
+    width: 200px;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 50px;
+  }
+
+  #righthand_content #my_title{
+    margin-top: -10px;
+  }
+  h4{
+    font-size: 15px;
+  }
+
+  #righthand_content #welcome h3{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  body{
+    background-color: aqua;
+  }
+}
