@@ -238,7 +238,7 @@ nav ul li a {
             justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.88);
+    background-color: #F38DA7;
   }
   nav ul {
     display: -webkit-box;
@@ -256,7 +256,7 @@ nav ul li a {
     height: 100vh;
     left: 0;
     text-align: center;
-    top: 140px;
+    top: 100px;
   }
   nav ul li {
     width: 140px;
@@ -267,9 +267,7 @@ nav ul li a {
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
-    background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(236, 227, 230, 0) 100%);
-    background-clip: text;
-    text-fill-color: transparent;
+    text-shadow: 0px 0px 1px #000;
   }
   #check {
     height: 30px;
