@@ -16,6 +16,11 @@ body {
   );
 }
 
+.fa.fa-bars, #check{
+  visibility: hidden;
+}
+
+
 #header {
   position: absolute;
   width: 100vw;
@@ -29,6 +34,7 @@ body {
 #logo #otavie_logo{
   filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
   //filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
+  z-index: 1;
 }
 
 #logo img {
@@ -46,7 +52,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  line-height: 60px;
+  line-height: 28px;
   margin: 0 15px;
 }
 nav ul li a {
@@ -184,6 +190,13 @@ nav ul li a {
   
 }
 
+@media screen and (max-width: 785px){
+  #righthand_content #welcome, #righthand_content #my_name{
+    margin-left: 10px;
+  }
+
+}
+
 @media screen and (max-width: 769px) {
   #inner_landing_content{
     height: 300px;
@@ -201,7 +214,7 @@ nav ul li a {
   }
 
   #righthand_content #welcome, #righthand_content #my_name{
-    margin-left: 12px;
+    margin-left: 30px;
   }
 
   #righthand_content #my_name h1{
@@ -209,17 +222,21 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 700px) {
-  body{
-    background-color: red;
-  }
-
+@media screen and (max-width: 750px) {
+  
   nav {
+    left: 100%;
+    position: absolute;
     display: flex;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
-    background-color: #7e535e;
+    width: 100%;
+    background: radial-gradient(
+    81.18% 74.32% at 72.22% 50%,
+    #A37781 0%,
+    rgba(238, 98, 133, 0) 100%);
+    //background-color: #7e535e;
+    transition: all ease-in-out 400ms;
   }
 
   #logo #otavie_logo{
@@ -231,27 +248,40 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     left: 0;
     text-align: center;
     top: 100px;
+   
 
     li{
-      width: 140px;
+      width: 180px;
       height: 100px;
       display: block;
       a{
-        color: #fff;
+        color: #000;
         padding: 10px 20px;
         cursor: pointer;
-        text-shadow: 0px 0px 1px #000;
+        //text-shadow: 0px 0px 1px #ee6285;
+        text-shadow: 0px 0px 1px #fff;
         font-size: 20px;
+        transition: all ease-in-out 400ms;
+      }
+
+      a:hover{
+        font-size: 21px;
+        //text-shadow: 0px 0px 1px #fff; 
+        text-shadow: 0px 0px 1px #ee6285;
       }
     }
-
     
+  }
+
+  .fa.fa-bars, #check{
+    visibility: visible;
+    cursor: pointer;
   }
 
   #check{
@@ -260,6 +290,12 @@ nav ul li a {
     position: absolute;
     top: 12px;
     right: 40px;
+    z-index: 1;
+    display: none;
+  }
+
+  #check:checked ~ nav{
+    left: 0;
   }
 
   .fa.fa-bars{
@@ -267,7 +303,8 @@ nav ul li a {
     top: 9.5px;
     right: 40px;
     font-size: 35px;
-    color: red;
+    color: #000;
+    z-index: 1;
   }
 
   #inner_landing_content{
@@ -308,10 +345,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 660px) {
-  body{
-    background-color: green;
-  }
-
+  
   #inner_landing_content{
     height: 240px;
     width: 240px;  
