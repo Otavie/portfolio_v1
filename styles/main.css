@@ -367,9 +367,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 610px) {
-  body {
-    background-color: blueviolet;
-  }
   #inner_landing_content {
     height: 220px;
     width: 220px;
