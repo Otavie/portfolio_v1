@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input:focus {
+  outline: none !important;
 }
 
 body {
