@@ -1,12 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-shadow: none;
 }
 
-input:focus {
-  outline: none ! important;
-}
 
 body {
   overflow: hidden;
@@ -60,6 +56,7 @@ nav ul li {
   line-height: 28px;
   margin: 0 15px;
 }
+
 nav ul li a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
@@ -91,6 +88,10 @@ nav ul li a {
   justify-content: center;
   height: 300px;
   width: 300px;  
+}
+
+h1#my_name_small{
+  display: none;
 }
 
 .otavie{
@@ -238,7 +239,7 @@ nav ul li a {
     width: 100%;
     background: radial-gradient(
     81.18% 74.32% at 72.22% 50%,
-    #A37781 0%,
+    #ee6285 0%,
     rgba(238, 98, 133, 0) 100%);
     //background-color: #7e535e;
     transition: all ease-in-out 400ms;
@@ -309,7 +310,7 @@ nav ul li a {
     right: 40px;
     font-size: 35px;
     color: #000;
-    z-index: 1;
+    z-index: 5;
   }
 
   #inner_landing_content{
@@ -369,7 +370,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 610px) {
-  
+  body{
+    background-color: blueviolet;
+  }
+
   #inner_landing_content{
     height: 220px;
     width: 220px;  
@@ -401,7 +405,10 @@ nav ul li a {
 }
 
 @media screen and (max-width: 560px) {
-  
+  body{
+    background-color: yellow;
+  }
+
   #inner_landing_content{
     height: 210px;
     width: 210px;  
@@ -430,6 +437,52 @@ nav ul li a {
 
   #righthand_content #welcome h3{
     font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  body{
+    background-color: aqua;
+  }
+
+  #righthand_content #my_name h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  #my_title h4{
+    margin-top: -5px;
+  }
+
+  #my_work{
+    margin-top: 10px;
+  }
+
+  h1#my_name_big{
+    display: none;
+  }
+
+  h1#my_name_small{
+    display: block;
+  }
+
+  .landing_content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #inner_landing_content{
+    margin-bottom: 10px;
+  }
+
+  #righthand_content{
+    align-items: center;
+  }
+
+  .landing_content{
+    margin-top: 20px;
   }
 
 }

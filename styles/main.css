@@ -1,12 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-input:focus {
-  outline: none !important;
 }
 
 body {
@@ -109,6 +103,10 @@ nav ul li a {
           justify-content: center;
   height: 300px;
   width: 300px;
+}
+
+h1#my_name_small {
+  display: none;
 }
 
 .otavie {
@@ -259,7 +257,7 @@ nav ul li a {
             justify-content: center;
     height: 100vh;
     width: 100%;
-    background: radial-gradient(81.18% 74.32% at 72.22% 50%, #A37781 0%, rgba(238, 98, 133, 0) 100%);
+    background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
     -webkit-transition: all ease-in-out 400ms;
     transition: all ease-in-out 400ms;
   }
@@ -325,7 +323,7 @@ nav ul li a {
     right: 40px;
     font-size: 35px;
     color: #000;
-    z-index: 1;
+    z-index: 5;
   }
   #inner_landing_content {
     height: 280px;
@@ -373,6 +371,9 @@ nav ul li a {
 }
 
 @media screen and (max-width: 610px) {
+  body {
+    background-color: blueviolet;
+  }
   #inner_landing_content {
     height: 220px;
     width: 220px;
@@ -400,6 +401,9 @@ nav ul li a {
 }
 
 @media screen and (max-width: 560px) {
+  body {
+    background-color: yellow;
+  }
   #inner_landing_content {
     height: 210px;
     width: 210px;
@@ -423,5 +427,49 @@ nav ul li a {
   }
   #righthand_content #welcome h3 {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #my_title h4 {
+    margin-top: -5px;
+  }
+  #my_work {
+    margin-top: 10px;
+  }
+  h1#my_name_big {
+    display: none;
+  }
+  h1#my_name_small {
+    display: block;
+  }
+  .landing_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #inner_landing_content {
+    margin-bottom: 10px;
+  }
+  #righthand_content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing_content {
+    margin-top: 20px;
   }
 }
