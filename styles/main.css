@@ -13,6 +13,12 @@ body {
   background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
 }
 
+main {
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+}
+
 .fa.fa-bars, #check {
   visibility: hidden;
 }

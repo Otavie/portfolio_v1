@@ -17,6 +17,12 @@ body {
   );
 }
 
+main{
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+}
+
 .fa.fa-bars, #check{
   visibility: hidden;
 }
@@ -442,6 +448,7 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 500px) {
+
   body{
     background-color: aqua;
   }
