@@ -480,13 +480,13 @@ h1#my_name_small {
   }
 }
 
-@media screen and (min-height: 500px) and (max-width: 500px) {
+@media screen and (min-height: 400px) and (max-width: 500px) {
   body, html {
     overflow-y: scroll;
   }
   main {
     position: relative;
-    height: 600px;
+    height: calc(100vh + 150px);
     overflow-y: scroll;
   }
 }
