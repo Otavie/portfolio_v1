@@ -493,3 +493,17 @@ h1#my_name_small{
   }
 
 }
+
+
+@media screen and (min-height: 500px) and (max-width: 500px) {
+  body, html{
+    overflow-y: scroll;
+  }
+  
+  main{
+    position: relative;
+    height: 800px;
+    overflow-y: scroll;
+  }
+  
+}
