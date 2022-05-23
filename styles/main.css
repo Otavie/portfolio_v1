@@ -13,14 +13,6 @@ body {
   background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
 }
 
-main {
-  height: calc(100vh - 62px);
-  position: fixed;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: blue;
-}
-
 .fa.fa-bars, #check {
   visibility: hidden;
 }
@@ -441,7 +433,7 @@ h1#my_name_small {
 @media screen and (max-width: 500px) {
   body {
     background-color: aquamarine;
-    overflow-y: hidden;
+    height: calc(100vh - 60px);
   }
   #righthand_content #my_name h1 {
     font-size: 40px;
@@ -480,5 +472,12 @@ h1#my_name_small {
   }
   .landing_content {
     margin-top: 20px;
+  }
+  main {
+    height: calc(100vh - 60px);
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: burlywood;
   }
 }

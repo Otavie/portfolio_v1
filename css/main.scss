@@ -17,14 +17,6 @@ body {
   );
 }
 
-main{
-  height: calc(100vh - 62px);
-  position: fixed;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: blue;
-}
-
 .fa.fa-bars, #check{
   visibility: hidden;
 }
@@ -453,7 +445,7 @@ h1#my_name_small{
 
   body{
     background-color: aquamarine;
-    overflow-y: hidden;
+    height: calc(100vh - 60px);
   }
 
   #righthand_content #my_name h1{
@@ -494,6 +486,15 @@ h1#my_name_small{
   .landing_content{
     margin-top: 20px;
   }
+
+  main{
+    height: calc(100vh - 60px);
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:burlywood;
+  }
+  
 
 }
 
