@@ -490,7 +490,7 @@ h1#my_name_small{
   main{
     height: calc(100vh - 60px);
     position: fixed;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
     background-color:burlywood;
   }
