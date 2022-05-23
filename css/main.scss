@@ -175,10 +175,6 @@ h1#my_name_small{
     overflow-x: hidden;
   }
 
-  main{
-    height: calc(100vh - 62px);
-  }
-
   #inner_landing_content{
     height: 300px;
     width: 300px;  
@@ -453,7 +449,6 @@ h1#my_name_small{
 
   body{
     background-color: aquamarine;
-    height: calc(100vh - 55px);
     overflow-y: hidden;
   }
 
@@ -497,17 +492,13 @@ h1#my_name_small{
   }
 
   main{
-    height: calc(100vh - 55px);
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
     background-color:rgba(10, 189, 88, 0.85)
   }
 
-  #landing_page, nav ul{
-    height: calc(100vh - 55px);
-  }
-
+  
   html{
     overflow: hidden;
     height: calc(100vh - 55px);
