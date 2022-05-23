@@ -440,7 +440,8 @@ h1#my_name_small {
 
 @media screen and (max-width: 500px) {
   body {
-    background-color: aqua;
+    background-color: aquamarine;
+    overflow-y: hidden;
   }
   #righthand_content #my_name h1 {
     font-size: 40px;
