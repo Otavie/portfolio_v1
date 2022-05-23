@@ -445,7 +445,7 @@ h1#my_name_small{
 
   body{
     background-color: aquamarine;
-    height: calc(100vh - 62px);
+    height: calc(100vh - 70px);
   }
 
   #righthand_content #my_name h1{
@@ -488,11 +488,11 @@ h1#my_name_small{
   }
 
   main{
-    height: calc(100vh - 62px);
+    height: calc(100vh - 70px);
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color:#A37781;
+    background-color:rgb(8, 96, 113);
   }
   
 
