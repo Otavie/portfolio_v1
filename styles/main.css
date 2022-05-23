@@ -480,4 +480,7 @@ h1#my_name_small {
     overflow-x: hidden;
     background-color: rgba(140, 21, 21, 0.85);
   }
+  #landing_page, nav ul {
+    height: calc(100vh - 55px);
+  }
 }
