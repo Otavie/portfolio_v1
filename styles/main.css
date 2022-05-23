@@ -483,4 +483,7 @@ h1#my_name_small {
   #landing_page, nav ul {
     height: calc(100vh - 55px);
   }
+  html {
+    overflow: hidden;
+  }
 }
