@@ -18,10 +18,11 @@ body {
 }
 
 main{
-  height: fit-content;
-  position: relative;
+  height: calc(100vh - 62px);
+  position: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: red;
 }
 
 .fa.fa-bars, #check{
