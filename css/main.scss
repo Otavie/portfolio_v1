@@ -175,6 +175,10 @@ h1#my_name_small{
     overflow-x: hidden;
   }
 
+  main{
+    height: calc(100vh - 62px);
+  }
+
   #inner_landing_content{
     height: 300px;
     width: 300px;  
@@ -497,7 +501,7 @@ h1#my_name_small{
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color:rgba(162, 137, 12, 0.85)
+    background-color:rgba(10, 189, 88, 0.85)
   }
 
   #landing_page, nav ul{
@@ -506,6 +510,7 @@ h1#my_name_small{
 
   html{
     overflow: hidden;
+    height: calc(100vh - 55px);
   }
   
 }
