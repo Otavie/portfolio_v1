@@ -15,7 +15,7 @@ body {
 #my_work_bg {
   height: 450px;
   width: 100vw;
-  background-image: url(/img/f.jpg);
+  background-image: url(../img/f.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,7 +25,7 @@ body {
 #meet_me_bg {
   height: 450px;
   width: 100vw;
-  background-image: url(/img/11.jpg);
+  background-image: url(../img/11.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
