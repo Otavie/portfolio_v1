@@ -480,7 +480,7 @@ h1#my_name_small {
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgba(10, 189, 88, 0.85);
+    background-color: rgba(68, 15, 166, 0.85);
   }
   html {
     overflow: hidden;
