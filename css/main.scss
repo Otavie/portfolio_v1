@@ -450,6 +450,7 @@ h1#my_name_small{
   body{
     background-color: aquamarine;
     height: calc(100vh - 55px);
+    overflow-y: hidden;
   }
 
   #righthand_content #my_name h1{
@@ -496,7 +497,7 @@ h1#my_name_small{
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color:rgba(236, 17, 188, 0.85)
+    background-color:rgba(162, 137, 12, 0.85)
   }
 
   #landing_page, nav ul{
