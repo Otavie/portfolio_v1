@@ -198,6 +198,9 @@ h1#my_name_small {
 }
 
 @media screen and (max-width: 800px) {
+  body, html, main {
+    overflow-x: hidden;
+  }
   #inner_landing_content {
     height: 300px;
     width: 300px;
