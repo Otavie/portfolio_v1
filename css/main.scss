@@ -20,9 +20,9 @@ body {
 main{
   height: calc(100vh - 62px);
   position: fixed;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
-  background-color: red;
+  background-color: blue;
 }
 
 .fa.fa-bars, #check{
