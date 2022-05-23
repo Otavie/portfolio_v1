@@ -479,3 +479,15 @@ h1#my_name_small {
     margin-top: 20px;
   }
 }
+
+@media screen and (min-height: 400px) and (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+    background-color: red;
+  }
+  main {
+    position: relative;
+    height: 90vh;
+    overflow-y: scroll;
+  }
+}
