@@ -18,9 +18,10 @@ body {
 }
 
 main{
-  height: 100vh;
+  height: fit-content;
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .fa.fa-bars, #check{

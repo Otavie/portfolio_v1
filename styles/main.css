@@ -14,9 +14,12 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .fa.fa-bars, #check {
