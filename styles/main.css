@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -11,6 +15,11 @@ body {
   width: 100vw;
   height: 100vh;
   background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
+}
+
+#righthand_content #my_work a {
+  text-decoration: none;
+  color: #000;
 }
 
 .fa.fa-bars, #check {
@@ -23,14 +32,14 @@ body {
   height: 62px;
   left: 0px;
   top: 0px;
-  background: rgba(255, 255, 250, 0.1);
+  background: rgba(228, 154, 173, 0.97);
   -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
 }
 
 #logo #otavie_logo {
-  -webkit-filter: drop-shadow(0.5px 0.5px 0px black);
-          filter: drop-shadow(0.5px 0.5px 0px black);
+  -webkit-filter: drop-shadow(0.5px 0.5px 0px white);
+          filter: drop-shadow(0.5px 0.5px 0px white);
   z-index: 1;
 }
 
@@ -200,6 +209,7 @@ h1#my_name_small {
 @media screen and (max-width: 800px) {
   body, html, main {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   #inner_landing_content {
     height: 300px;
@@ -263,10 +273,6 @@ h1#my_name_small {
     background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
     -webkit-transition: all ease-in-out 400ms;
     transition: all ease-in-out 400ms;
-  }
-  #logo #otavie_logo {
-    -webkit-filter: drop-shadow(0.5px 0.5px 0px white);
-            filter: drop-shadow(0.5px 0.5px 0px white);
   }
   nav ul {
     display: -webkit-box;

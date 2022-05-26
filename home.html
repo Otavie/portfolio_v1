@@ -10,6 +10,7 @@
   </title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   <link rel="icon" href="img/ot.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="styles/home.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,8 +39,8 @@
           <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="#my_work_section">work</a></li>
-            <li><a href="#meet_me_section">about me</a></li>
-            <li><a href="#lets_talk">let's talk</a></li>
+            <li><a href="#know_me_section">about me</a></li>
+            <li><a href="#lets_talk_section">let's talk</a></li>
           </ul>
         </nav>
       </header>
@@ -66,7 +67,7 @@
             </div>
   
             <div id="my_work">
-              <button>my work</button>
+              <button><a href="#my_work_section">my work</a></button>
             </div>
           </div>
         </div>
@@ -80,30 +81,150 @@
           <h1>My Work</h1>
         </div>
 
-        <div id="my_work_content">
-          <p>This is where my work is</p>
+        
+
+        <div class="all_my_work my_work_one">
+          <div class="project"  id="my_work_one">
+            <a href="https://otavie.github.io/LandingPageCSS/">
+              <img src="img/project_landing_Page.png" alt="Project One - Landing Page"  id="project_landing_Page">
+            </a>
+          </div>
+  
+          <div id="my_work_one_writeup" class="my_work_writeup">
+            <h4>Simple Landing Page</h4>
+            <p>
+              A simple landing page with responsive navbar, responsive image and typing cursor animation.<br>
+              JavaScript Library called typed.js was used for typing the strings that were displayed on the page.
+            </p>
+            <h3 class="tools_libraries">Tools/Library Used:</h3>
+            <p>HTML | CSS | <a href="https://mattboldt.com/demos/typed-js/">typed.js</a></p>
+          </div>
+
+        </div>
+
+        <div class="all_my_work my_work_two">
+          
+          <div id="my_work_two_writeup" class="my_work_writeup">
+            <h4>Portfolio Website</h4>
+            <p>
+              This project is actually this website you are viewing now. It is a one-page portfolio website.<br>
+              It has a landing page built for any device viewport and the remaining pages are built on another single page, with smooth scroll effects to every section of the page.
+            </p>
+            <h3 class="tools_libraries">Tools/Library Used:</h3>
+            <p>HTML | CSS | <a href="https://animate.style/">animate.css</a> </p>
+          </div>
+
+          <div class="project"  id="my_work_two">
+            <a href="https://otavie.com/">
+              <img src="img/project_my_website.png" alt="Project Two - My Current Website"  id="project_my_website">
+            </a>
+          </div>
+  
 
         </div>
 
       </div>
+        
+
+
       
 
-      <div id="meet_me_section">
-        <div  id="meet_me_bg">
-          <h1>Meet Me</h1>
-        </div>
-
-        <div id="meet_me_content">
-          <p>This is meet me content</p>
-
-        </div>
-
+      <div id="know_me_section">
+          <div  id="know_me_bg">
+            <h1>Know Me</h1>
+          </div>
+          <div id="know_me_content">
+            <div id="know_me_photo">
+              <picture>
+                <source srcset="img/me_smaller.png" media="(max-width: 750px)" id="me_smaller"> 
+                <source srcset="img/me.png" media="(max-width: 4000px)">
+                <img src="img/me.png" alt="know me">
+              </picture>
+            </div>
+            <div id="know_me_writeup">
+              <h3>UI/UX Designer | Web Developer | Programmer</h3>
+              <p>
+                Hi, my name is <span class="bold_this">Otavie</span>.<br>
+                I am a <span class="bold_this">UI/UX Designer</span> and a <span class="bold_this">Frontend Engineer</span>.<br> Basically, I design using Figma and I build beautiful websites/web applications with <span class="bold_this">HTML, CSS, JavaScript and React</span>.<br> I program using Python and I am also able to do some data analysis using <span class="bold_this">Python and R</span>.<br> I have basic understanding of <span class="bold_this">C, PHP and Java</span>.<br> At present, Otavie is a master's student in <span class="bold_this">Computer Science</span> at <span class="bold_this">Covenant University (CU), Ota, Nigeria</span> researching in the field of <span class="bold_this">Digital Twins (DTs)</span> and <span class="bold_this">Recommendation System (RSs)</span>, with great <span class="bold_this">bibliometric analysis</span> and <span class="bold_this">science mapping</span> skills.
+              </p>
+            </div>
+          </div>
       </div>
 
 
-    </section>
-    
+      <div id="lets_talk_section">
+        <div  id="lets_talk_bg">
+          <h1>Let's Talk</h1>
+        </div>
+      
+        <div id="the_contact_area">
+          <div class="contact_area_info"  id="contact_area_info">
+            <form id="the_form">
+              <input type="text" value="Your Full Name" name="Name" placeholder="Your Full Name" required>
+              <input type="email" value="Your Subject" name="Subject" placeholder="Your Subject" required>
+              <input type="email" value="Your Email Address" name="Email" placeholder="Your Email Address" required>
+              <textarea name="Message" placeholder="Your Message" required>Your Message</textarea>
+            </form>
+            <button type="submit">Send Email</button>
+          </div>
+  
+          <div class="contact_area_info" id="contact_area_info" >
+            <div class="the_details">
+              <img class="the_details_logo" src="img/call.png">
+              <p>+23470 650 69495</p>
+            </div>
+
+            <div class="the_details">
+              <img class="the_details_logo" src="img/email.png">
+              <p>otavieokuoyo@gmail.com</p>
+            </div>
+
+            <div class="the_details">
+              <img class="the_details_logo" src="img/location.png">
+              <p>Lagos, Nigeria</p>
+            </div>
+
+            <div class="the_details">
+              <a href="https://github.com/Otavie"><img src="img/github_black.png" alt="GitHub"></a>
+              <p>GitHub</p>
+            </div>
+
+            <div class="the_details">
+              <a href="https://www.linkedin.com/in/otavie"><img src="img/linkedIn_black.png" alt="LinkedIn"></a>
+              <p>LinkedIn</p>
+            </div>
+          </div>
+        </div>
+        
+      </div> <!--Lets Talk-->
+
+    </section>   
+
+    <footer>
+      <div id="footer_content">
+        <div id="socials">
+          <p><a href="https://github.com/Otavie"><img src="img/github_black.png" alt="GitHub"></a></p>
+          <p><a href="https://www.linkedin.com/in/otavie"><img src="img/linkedIn_black.png" alt="LinkedIn"></a></p>
+          <p><a href=""><img src="img/twitter_black.png" alt="Twitter"></a></p>
+          <p><a href=""><img src="img/instagram_black.png"  alt="Instagram"></a></p>
+        </div>
+
+        <div id="link_this_site">
+          <p><a href="https://www.otavie.com/">otavie.com</a></p>
+        </div>
+
+        <div id="other_contact">
+          <p>otavieokuoyo@gmail.com | +23470 650 694 95</p>
+        </div>
+
+        <div id="my_cv">
+          <p>View my <a href="https://resume.io/r/ILrAX41Ui">Resume</a></p>
+        </div>
+
+      </div>
+    </footer>
   </main>
+
 
 
 </body>

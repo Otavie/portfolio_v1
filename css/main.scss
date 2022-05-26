@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;    
+}
 
 body {
   overflow: hidden;
@@ -17,6 +20,11 @@ body {
   );
 }
 
+#righthand_content #my_work a{
+  text-decoration: none;
+  color: #000;
+}
+
 .fa.fa-bars, #check{
   visibility: hidden;
 }
@@ -28,13 +36,16 @@ body {
   height: 62px;
   left: 0px;
   top: 0px;
-  background: rgba(255, 255, 250, 0.1);
+  background: rgba(228, 154, 173, 0.97);
+  //background: rgba(233, 122, 150, .97);
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+
 }
 
 #logo #otavie_logo{
-  filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
+  //filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
   //filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
+  filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
   z-index: 1;
 }
 
@@ -173,6 +184,7 @@ h1#my_name_small{
 @media screen and (max-width: 800px) {
   body, html, main{
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   #inner_landing_content{
@@ -247,12 +259,7 @@ h1#my_name_small{
     rgba(238, 98, 133, 0) 100%);
     //background-color: #7e535e;
     transition: all ease-in-out 400ms;
-  }
-
-  #logo #otavie_logo{
-    filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
-  }
-  
+  } 
 
   nav ul{
     display: flex;
@@ -505,4 +512,3 @@ h1#my_name_small{
   }
   
 }
-

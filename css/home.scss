@@ -4,93 +4,299 @@
 }
 
 body {
+  height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
   position: relative;
-  width: 100vw;  
-  background: radial-gradient(
-    81.18% 74.32% at 72.22% 50%,
-    #ee6285 0%,
-    rgba(238, 98, 133, 0) 100%
-  );
+  width: calc(100vw - (100vw - 100%));
+  //width: 100vw;
+  background: radial-gradient(81.18% 74.32% at 72.22% 50%,
+      #ee6285 0%,
+      rgba(238, 98, 133, 0) 100%);
+}
+
+header{
+  z-index: 100;
+}
+
+#righthand_content #my_work a{
+  text-decoration: none;
+  color: #000;
+}
+
+#the_contact_area{
+  background-color: #2d83cf;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 75vw;
+  height: 100%;
+
+}
+
+.contact_area_info{
+  flex-grow: 1;
+  //border: 1px solid white;
+  width: 400px;
+  //margin: 0 10px;
+
+  button{
+    font-family: 'Oxanium', cursive;
+    background-color: red;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 400ms ease-in-out;
+    margin: 10px 0 20px 0px;
+    float: right;
+  }
+
+  button:hover{
+    background-color: #fff;
+  }
+}
+
+.the_details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.the_details_logo, .the_details a img{
+  height: 37px;
+  width: 37px;
+  margin-bottom: 5px;
+  transition: all ease-in-out 400ms;
+}
+
+.the_details a img:hover{
+  transform: scale(1.1);
+}
+
+form{
+  transition: all 2s ease-in-out;
+}
+
+.contact_area_info{
+  min-height: 300px;
+  font-family: 'Oxanium', cursive;
+  padding: 10px;
+}
+
+#the_form{
+  display: flex;
+  flex-direction: column;
+
+  input, textarea{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 7px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+    font-family: 'Oxanium', cursive;
+    letter-spacing: 1px;
+    margin: 12px 0px;
+  }
+
+  input{
+    height: 18px;
+    width: 300px;
+  }
+
+  textarea{
+    min-height: 200px;
+    line-height: 22px;
+    width: 370px;
+  }
+
+}
+
+
+
+#my_work_section a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 0px 2px #000;
+  transition: all ease-in-out 400ms;
+}
+
+#my_work_section a:hover{
+  color:#000;
+  text-shadow: 0px 0px 1px #fff;
+  font-size: 15px;
+}
+
+#lets_talk_section{
+  min-height: 300px;
+  background-color: red;
+  //position: absolute;
+}
+
+.all_my_work{
+  display: flex;
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 60vw;
+  align-items: center;
+  min-height: 350px;
+  border: 1px solid blue;
   
 }
 
-#my_work_bg{
-    height: 450px;
-    width: 100vw;
-    background-image: url(../img/f.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;   
-    background-attachment: fixed;
+.project a img{
+  display: flex;
+  transition: all ease-in-out 400ms;
+  
 }
 
-#meet_me_bg{
+.project{
+  display: flex;
+  
+}
+
+.project img:hover{
+  transform: scale(.95);
+  
+}
+
+#my_work_one img:hover{
+  box-shadow: 1px 1px 10px #2d83cf;
+}
+
+#my_work_two img:hover{
+  box-shadow: 1px 1px 10px #f04a74;
+}
+
+
+#my_work_one_writeup, #my_work_two_writeup{
+  padding: 40px;
+  
+}
+
+
+#my_work_section h3{
+  //font-family: 'Zen Kurenaido', sans-serif;
+  //font-family: 'Quintessential', cursive;
+  //font-family: 'Ubuntu', sans-serif;
+  //font-family: 'Supermercado One', cursive;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  font-weight: 500;
+  margin: 30px 0;
+  font-size: 30px;
+}
+
+.all_my_work .my_work_writeup h4{
+  margin-bottom: 20px;
+  font-family: 'Satisfy', cursive;
+  font-size: 16px;
+}
+
+#my_work_one_writeup h3.tools_libraries, #my_work_two_writeup h3.tools_libraries{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+#my_work_bg, #know_me_bg, #lets_talk_bg {
   height: 450px;
-    width: 100vw;
-    background-image: url(../img/11.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;    
-    background-attachment: fixed;
-    margin-top: 100px;
-    top: 100px;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-#my_work_bg h1{
-    font-family: 'Satisfy', cursive; 
-    font-size: 65px;
-    line-height: 450px;
-    margin-left: 9vw;   
-    text-shadow: 0px 1px 2px #fff;
+#my_work_bg {
+  background-image: url(../img/my_work_bg.jpg);
 }
 
-#meet_me_bg h1{
-  font-family: 'Satisfy', cursive; 
+#know_me_bg {
+  background-image: url(../img/know_me_bg.jpg);
+  //margin-top: 100px;
+  top: 100px;
+}
+
+#lets_talk_bg {
+  background-image: url(../img/lets_talk_bg.jpg);
+  //margin-top: 100px;
+  //top: 100px;
+}
+
+
+#my_work_bg h1, #know_me_bg h1, #lets_talk_bg h1 {
+  font-family: 'Satisfy', cursive;
   font-size: 65px;
   line-height: 450px;
-  margin-left: 9vw;   
+  margin-left: 9vw;
   text-shadow: 0px 1px 2px #fff;
 }
 
+/*
+#know_me_bg h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 65px;
+  line-height: 450px;
+  margin-left: 9vw;
+  text-shadow: 0px 1px 2px #fff;
+}
+*/
 
-html, body{
-    position: inherit;
-  
+.tools_libraries{
+  text-align: center;
 }
 
-main{
-    min-height: 100vh;
+#my_work_one_writeup, #my_work_two_writeup{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  background-color: red;
+
 }
 
-#lower_section{
-    height: 2000px;
-    width: 100%;
+html, body {
+  position: inherit;
+
 }
 
-.lower_section{
-    background-position: fixed;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-    z-index: -10;
+main {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+#lower_section {
+  min-height: 2000px;
+  width: 100%;
+}
 
-.fa.fa-bars, #check{
+html {
+  scroll-behavior: smooth;
+}
+
+.fa.fa-bars, #check {
   visibility: hidden;
 }
 
-
-#header {
+main>section>header#header {
   position: fixed;
   width: 100vw;
   height: 62px;
   left: 0px;
   top: 0px;
-  background: rgba(233, 122, 150, .97);
+  background: rgba(228, 154, 173, 0.97);
+  //background: rgba(233, 122, 150, .97);
   /*background: radial-gradient(
     81.18% 74.32% at 72.22% 50%,
     #ee6285 0%,
@@ -102,8 +308,9 @@ main{
 }
 
 #logo #otavie_logo{
-  filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
+  //filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
   //filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
+  filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
   z-index: 1;
 }
 
@@ -140,7 +347,6 @@ nav ul li a {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  
 }
 
 .landing_content {
@@ -153,60 +359,60 @@ nav ul li a {
   justify-content: center;
 }
 
-#inner_landing_content{
+#inner_landing_content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 300px;
-  width: 300px;  
+  width: 300px;
 }
 
-h1#my_name_small{
+h1#my_name_small {
   display: none;
 }
 
-.otavie{
+.otavie {
   position: absolute;
   height: 260px;
   width: 260px;
 }
 
-#o{
+#o {
   height: 330px;
   width: 330px;
   z-index: -1;
 }
 
-#landing_photo{
+#landing_photo {
   z-index: -2;
 }
 
-#righthand_content{
+#righthand_content {
   display: flex;
   flex-direction: column;
 }
 
-#righthand_content #welcome h3{
+#righthand_content #welcome h3 {
   font-family: 'Satisfy', cursive;
   font-size: 25px;
   font-weight: 600;
   text-shadow: 0px 0px 1px #fff;
 }
 
-#righthand_content #my_name h1{
-  font-family: 'Oxanium', cursive; 
+#righthand_content #my_name h1 {
+  font-family: 'Oxanium', cursive;
   font-size: 100px;
   font-weight: 300;
   text-shadow: 0px 0px 1.5px rgb(8, 96, 113);
 }
 
-#righthand_content #my_title h4{
-  font-family: 'Oxanium', cursive; 
+#righthand_content #my_title h4 {
+  font-family: 'Oxanium', cursive;
   color: #fff;
 }
 
-#righthand_content #my_work button{
-  font-family: 'Oxanium', cursive; 
+#righthand_content #my_work button {
+  font-family: 'Oxanium', cursive;
   width: 135px;
   height: 45px;
   font-weight: 600;
@@ -222,90 +428,272 @@ h1#my_name_small{
   transition: all ease-in-out 200ms;
 }
 
-#righthand_content #my_work button:hover{
+#righthand_content #my_work button:hover {
   transform: translateY(5%);
   background: #ee6285;
 }
 
-#righthand_content #welcome, #righthand_content #my_name{
+#righthand_content #welcome,
+#righthand_content #my_name {
   margin-left: 20px;
 }
 
-#righthand_content #my_title{
+#righthand_content #my_title {
   margin-top: -20px;
   margin-bottom: 20px;
 }
 
-#righthand_content #my_title, #righthand_content #my_work{
+#righthand_content #my_title,
+#righthand_content #my_work {
   display: flex;
   justify-content: right;
 }
 
+#know_me_content{
+  width: 60vw;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  background-color: green;
+  border: 1px solid white;
+}
+
+#know_me_photo{
+  margin-left: -20px;
+}
+
+#know_me_writeup {
+  padding-left: 30px;
+  
+  p{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  h3{
+    text-align: center;
+    font-family: 'Oxanium', cursive;   
+    margin-bottom: 20px;
+    color: #000;
+    text-shadow: 1px 0px 2px white;
+  }
+
+}
+
+#know_me_photo{
+  transition: all ease-in-out 400ms;
+}
+
+
+#know_me_photo img{
+  height: auto;
+  width: 200px;
+  border-radius: 50%;  
+  transition: all ease-in-out 400ms;
+  //box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, .5);
+}
+
+#know_me_photo:hover img{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+#know_me_photo:hover{
+  transform: translate(-3%, 3%);
+  //transform: translateX(-3%);
+}
+
+.bold_this{
+  font-size: 15.5px;
+  color: rgb(2, 10, 24);
+  text-shadow: 0px 0.5px 0.5px white;
+  font-family: "Poppins", sans-serif;
+}
+
+.section #my_work_section a img{
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  body{
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  body{
+    background-color: blue;
+  }
+
+  .all_my_work{
+    width: 80vw;
+  }
+
+  #know_me_content{
+    width: 80%;
+  }  
+
+  #know_me_writeup{
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #the_contact_area{
+    width: 80vw;
+    flex-direction: column;
+  }
+
+}
 
 @media screen and (max-width: 800px) {
-  body, html, main{
+  /*body, html, main{
+    scroll-behavior: smooth;
+  }
+  */
+
+  body{
+    background-color: yellow;
+  }
+
+  #know_me_writeup {
+    padding-left: 20px;
+  }
+
+  #know_me_content{
+    width: 85%;
+  }
+
+  body,
+  main {
     overflow-x: hidden;
   }
 
-  #inner_landing_content{
-    height: 300px;
-    width: 300px;  
-  }
-  
-  .otavie{
-    height: 240px;
-    width: 240px;
-  }
-  
-  #o{
+  #inner_landing_content {
+    position: relative;
     height: 300px;
     width: 300px;
   }
 
-  #righthand_content #welcome, #righthand_content #my_name{
+  .otavie {
+    height: 240px;
+    width: 240px;
+  }
+
+  #o {
+    height: 300px;
+    width: 300px;
+  }
+
+  #righthand_content #welcome,
+  #righthand_content #my_name {
     margin-left: 12px;
   }
 
-  #righthand_content #my_name h1{
+  #righthand_content #my_name h1 {
     font-size: 90px;
+  }
+  
+  #lower_section{
+    scroll-behavior: smooth;
+    min-height: 800px;
+    overflow: hidden;
   }
   
 }
 
-@media screen and (max-width: 785px){
-  #righthand_content #welcome, #righthand_content #my_name{
+@media screen and (max-width: 785px) {
+  
+  #righthand_content #welcome,
+  #righthand_content #my_name {
     margin-left: 10px;
   }
 
 }
 
 @media screen and (max-width: 769px) {
-  #inner_landing_content{
-    height: 300px;
-    width: 300px;  
-  }
   
-  .otavie{
-    height: 240px;
-    width: 240px;
+  body{
+    background-color: white;
   }
-  
-  #o{
+
+
+  .all_my_work{
+    width: 85vw;
+  }
+
+  #inner_landing_content {
     height: 300px;
     width: 300px;
   }
 
-  #righthand_content #welcome, #righthand_content #my_name{
+  .otavie {
+    height: 240px;
+    width: 240px;
+  }
+
+  #o {
+    height: 300px;
+    width: 300px;
+  }
+
+  #righthand_content #welcome,
+  #righthand_content #my_name {
     margin-left: 30px;
   }
 
-  #righthand_content #my_name h1{
+  #righthand_content #my_name h1 {
     font-size: 90px;
   }
 }
 
 @media screen and (max-width: 750px) {
+  body{
+    background-color: orange;
+  }
+
+  #know_me_content{
+    flex-direction: column;
+  }
+
+  #know_me_photo {
+    width: auto;
+    height: 280px;
+
+    img{
+      width: auto;
+      height: 270px;
+    }
   
+  }
+
+  #know_me_photo {
+    margin-top: 30px;
+  }
+
+
+  .all_my_work{
+    flex-direction: column;
+    
+  }
+
+  #my_work_one_writeup p{
+    //margin: 0px 30px;
+    //padding: 0px 10px;
+    line-height: 30px;
+  }
+
+  .all_my_work.my_work_one{
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+    
   nav {
     left: 100%;
     position: absolute;
@@ -313,20 +701,14 @@ h1#my_name_small{
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: radial-gradient(
-    81.18% 74.32% at 72.22% 50%,
-    #ee6285 0%,
-    rgba(238, 98, 133, 0) 100%);
+    background: radial-gradient(81.18% 74.32% at 72.22% 50%,
+        #ee6285 0%,
+        rgba(238, 98, 133, 0) 100%);
     //background-color: #7e535e;
     transition: all ease-in-out 400ms;
   }
-
-  #logo #otavie_logo{
-    filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
-  }
   
-
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -336,13 +718,14 @@ h1#my_name_small{
     left: 0;
     text-align: center;
     top: 100px;
-   
 
-    li{
+
+    li {
       width: 180px;
       height: 100px;
       display: block;
-      a{
+
+      a {
         color: #000;
         padding: 10px 20px;
         cursor: pointer;
@@ -352,21 +735,22 @@ h1#my_name_small{
         transition: all ease-in-out 400ms;
       }
 
-      a:hover{
+      a:hover {
         font-size: 21px;
         //text-shadow: 0px 0px 1px #fff; 
         text-shadow: 0px 0px 1px #ee6285;
       }
     }
-    
+
   }
 
-  .fa.fa-bars, #check{
+  .fa.fa-bars,
+  #check {
     visibility: visible;
     cursor: pointer;
   }
 
-  #check{
+  #check {
     height: 30px;
     width: 30px;
     position: absolute;
@@ -376,11 +760,11 @@ h1#my_name_small{
     display: none;
   }
 
-  #check:checked ~ nav{
+  #check:checked~nav {
     left: 0;
   }
 
-  .fa.fa-bars{
+  .fa.fa-bars {
     position: absolute;
     top: 9.5px;
     right: 40px;
@@ -389,66 +773,70 @@ h1#my_name_small{
     z-index: 5;
   }
 
-  #inner_landing_content{
-    height: 280px;
-    width: 280px;  
-  }
-  
-  .otavie{
-    height: 220px;
-    width: 220px;
-  }
-  
-  #o{
+  #inner_landing_content {
     height: 280px;
     width: 280px;
   }
 
-  #righthand_content #welcome, #righthand_content #my_name{
+  .otavie {
+    height: 220px;
+    width: 220px;
+  }
+
+  #o {
+    height: 280px;
+    width: 280px;
+  }
+
+  #righthand_content #welcome,
+  #righthand_content #my_name {
     margin-left: 12px;
   }
 
-  #righthand_content #my_name h1{
+  #righthand_content #my_name h1 {
     font-size: 80px;
   }
 
-  #righthand_content #my_work button{
+  #righthand_content #my_work button {
     width: 120px;
     font-size: 18px;
   }
 
-  #righthand_content #my_title{
+  #righthand_content #my_title {
     font-size: 17px;
   }
 
-  #righthand_content #welcome h3{
+  #righthand_content #welcome h3 {
     font-size: 19px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #my_work_bg h1, #meet_me_bg h1{
+
+  #my_work_bg h1,
+  #know_me_bg h1,
+  #lets_talk_bg h1 {
     width: 200px;
     line-height: 100px;
     padding-top: 115px;
   }
-  
+
 }
 
 
 @media screen and (max-width: 660px) {
-  
-  #inner_landing_content{
+
+  #inner_landing_content {
     height: 240px;
-    width: 240px;  
+    width: 240px;
   }
-  
-  .otavie{
+
+  .otavie {
     height: 180px;
     width: 180px;
   }
-  
-  #o{
+
+  #o {
     height: 240px;
     width: 240px;
   }
@@ -456,73 +844,85 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 610px) {
-  body{
+  body {
     background-color: blueviolet;
   }
 
-  #inner_landing_content{
-    height: 220px;
-    width: 220px;  
+  #know_me_content{
+    width: 85%;
   }
-  
-  .otavie{
-    height: 170px;
-    width: 170px;
-  }
-  
-  #o{
+
+  #inner_landing_content {
     height: 220px;
     width: 220px;
   }
 
-  #righthand_content #my_name h1{
+  .otavie {
+    height: 170px;
+    width: 170px;
+  }
+
+  #o {
+    height: 220px;
+    width: 220px;
+  }
+
+  #righthand_content #my_name h1 {
     font-size: 60px;
   }
 
-  #righthand_content #my_title{
+  #righthand_content #my_title {
     margin-top: -18px;
-  } h4{
+  }
+
+  h4 {
     font-size: 16px;
   }
 
-  #righthand_content #welcome, #righthand_content #my_name{
+  #righthand_content #welcome,
+  #righthand_content #my_name {
     margin-left: 8px;
   }
-  
+
 }
 
 @media screen and (max-width: 560px) {
-  body{
+  .contact_area_info{
+    width: 350px;
+  }
+
+  body {
     background-color: yellow;
   }
 
-  #inner_landing_content{
+  #inner_landing_content {
     height: 210px;
-    width: 210px;  
+    width: 210px;
   }
-  
-  .otavie{
+
+  .otavie {
     height: 150px;
     width: 150px;
   }
-  
-  #o{
+
+  #o {
     height: 200px;
     width: 200px;
   }
 
-  #righthand_content #my_name h1{
+  #righthand_content #my_name h1 {
     font-size: 50px;
   }
 
-  #righthand_content #my_title{
+  #righthand_content #my_title {
     margin-top: -10px;
   }
-  h4{
+
+  h4 {
     font-size: 15px;
   }
 
-  #righthand_content #welcome h3{
+  #righthand_content #welcome h3 {
     font-size: 15px;
   }
 
@@ -530,53 +930,118 @@ h1#my_name_small{
 
 @media screen and (max-width: 500px) {
 
-  body{
+  body {
     background-color: aquamarine;
   }
 
-  #righthand_content #my_name h1{
+  #righthand_content #my_name h1 {
     font-size: 40px;
     margin-bottom: 10px;
   }
 
-  #my_title h4{
+  #my_title h4 {
     margin-top: -5px;
   }
 
-  #my_work{
+  #my_work {
     margin-top: 10px;
   }
 
-  h1#my_name_big{
+  h1#my_name_big {
     display: none;
   }
 
-  h1#my_name_small{
+  h1#my_name_small {
     display: block;
   }
 
-  .landing_content{
+  .landing_content {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
 
-  #inner_landing_content{
+  #inner_landing_content {
     margin-bottom: 10px;
   }
 
-  #righthand_content{
+  #righthand_content {
     align-items: center;
   }
 
-  .landing_content{
+  .landing_content {
     margin-top: 20px;
   }
-  
-  html{
-    
+
+  html {
+
     height: calc(100vh - 55px);
   }
-  
+
 }
 
+footer{
+  position: absolute;
+  height: 50vh;
+  background-color: #ee6285;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+#footer_content{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#footer_content div{
+  margin: 5px 0;
+}
+
+#socials{
+  display: flex;
+
+  img{
+    height: 40px;
+    width: 40px;
+    padding: 0 3px;
+    transition: all ease-in-out 400ms;
+  }
+
+  img:hover{
+    transform: scale(1.15);
+    //box-shadow: 0px 0px 5px 1px #000;
+  }
+}
+
+#link_this_site p a{
+  color: #000;
+  text-shadow: .2px .3px 0.1px white;
+  //text-shadow: 0px 0px 0px 1px #fff;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all ease-in-out 650ms;
+}
+
+
+#link_this_site p a:hover{
+  color: rgb(105, 98, 98);
+  //text-shadow: 0px 0px 0px 1px #000;
+  //font-size: 17.5px;
+}
+
+
+#other_contact{
+  font-size: 15px;
+  text-shadow: .2px .3px 0.1px white;
+}
+
+#my_cv p a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 0px 1px #000;
+  font-weight: 500;
+}
