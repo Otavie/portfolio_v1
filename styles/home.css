@@ -379,14 +379,6 @@ h1#my_name_small {
           align-items: center;
 }
 
-#know_me_photo {
-  margin-left: -20px;
-}
-
-#know_me_writeup {
-  padding-left: 30px;
-}
-
 #know_me_writeup p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
