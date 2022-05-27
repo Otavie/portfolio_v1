@@ -408,14 +408,9 @@ h1#my_name_small {
 }
 
 #know_me_photo:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
-}
-
-#know_me_photo:hover {
-  -webkit-transform: translate(-3%, 3%);
-          transform: translate(-3%, 3%);
 }
 
 .bold_this {
