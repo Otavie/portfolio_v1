@@ -17,6 +17,10 @@ header {
   z-index: 100;
 }
 
+.nav {
+  display: none;
+}
+
 #righthand_content #my_work a {
   text-decoration: none;
   color: #000;
@@ -34,8 +38,21 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  width: 75vw;
+  width: 60vw;
   height: 100%;
+}
+
+#the_contact_area #contact_area_form {
+  border: 1px solid white;
+  width: 90%;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+#the_contact_area #contact_area_details {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  border: 1px solid white;
 }
 
 .contact_area_info {
@@ -43,6 +60,7 @@ header {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 400px;
+  text-align: center;
 }
 
 .contact_area_info button {
@@ -55,7 +73,6 @@ header {
   -webkit-transition: background-color 400ms ease-in-out;
   transition: background-color 400ms ease-in-out;
   margin: 10px 0 20px 0px;
-  float: right;
 }
 
 .contact_area_info button:hover {
@@ -77,6 +94,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px 0;
+}
+
+.the_details p {
+  text-shadow: 0px 0.5px 0px #fff;
 }
 
 .the_details_logo, .the_details a img {
@@ -111,6 +132,9 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #the_form input, #the_form textarea {
@@ -121,10 +145,14 @@ form {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid red;
-  outline: none;
   font-family: 'Oxanium', cursive;
   letter-spacing: 1px;
   margin: 12px 0px;
+  text-shadow: 0px 0.3px 0px #fff;
+}
+
+#the_form input:focus, #the_form textarea:focus {
+  border: 1px solid #ceb8b8;
 }
 
 #the_form input {
@@ -135,7 +163,7 @@ form {
 #the_form textarea {
   min-height: 200px;
   line-height: 22px;
-  width: 370px;
+  width: 320px;
 }
 
 #my_work_section a {
@@ -580,6 +608,9 @@ h1#my_name_small {
   body {
     background-color: blue;
   }
+  #the_contact_area {
+    width: 70vw;
+  }
   .all_my_work {
     width: 80vw;
   }
@@ -735,6 +766,9 @@ h1#my_name_small {
     -webkit-transition: all ease-in-out 400ms;
     transition: all ease-in-out 400ms;
   }
+  #check:checked ~ nav {
+    left: 0;
+  }
   nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -766,6 +800,7 @@ h1#my_name_small {
     font-size: 20px;
     -webkit-transition: all ease-in-out 400ms;
     transition: all ease-in-out 400ms;
+    border: 1px solid white;
   }
   nav ul li a:hover {
     font-size: 21px;
@@ -784,9 +819,6 @@ h1#my_name_small {
     right: 40px;
     z-index: 1;
     display: none;
-  }
-  #check:checked ~ nav {
-    left: 0;
   }
   .fa.fa-bars {
     position: absolute;
@@ -963,6 +995,12 @@ h1#my_name_small {
   }
   html {
     height: calc(100vh - 55px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #the_form textarea, #the_form input {
+    width: 250px;
   }
 }
 

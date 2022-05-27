@@ -19,6 +19,11 @@ header{
   z-index: 100;
 }
 
+.nav{
+  display: none;
+  //transition: all ease-in-out 400ms;
+}
+
 #righthand_content #my_work a{
   text-decoration: none;
   color: #000;
@@ -30,16 +35,32 @@ header{
   justify-content:space-evenly;
   align-items: center;
   margin: 0 auto;
-  width: 75vw;
+  width: 60vw;
   height: 100%;
 
+  #contact_area_form{
+    border: 1px solid white;
+    width: 90%;
+    flex-basis: auto;
+    //flex-grow: 2;
+  }
+
+  #contact_area_details{
+    flex-basis: auto;
+    //width: 100%;
+    //flex-grow: 1;
+    border: 1px solid white;
+  }
+
 }
+
 
 .contact_area_info{
   flex-grow: 1;
   //border: 1px solid white;
   width: 400px;
   //margin: 0 10px;
+  text-align: center;
 
   button{
     font-family: 'Oxanium', cursive;
@@ -50,7 +71,9 @@ header{
     font-weight: 600;
     transition: background-color 400ms ease-in-out;
     margin: 10px 0 20px 0px;
-    float: right;
+    //float: right;
+    //margin: 0 auto;
+    //transform: translateX(70%);
   }
 
   button:hover{
@@ -64,6 +87,10 @@ header{
   justify-content: center;
   align-items: center;
   margin: 15px 0;
+
+  p{
+    text-shadow: 0px 0.5px 0px #fff;
+  }
 }
 
 .the_details_logo, .the_details a img{
@@ -90,6 +117,7 @@ form{
 #the_form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   input, textarea{
     font-size: 15px;
@@ -99,10 +127,16 @@ form{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid red;
-    outline: none;
+    //outline: none;
     font-family: 'Oxanium', cursive;
     letter-spacing: 1px;
     margin: 12px 0px;
+    text-shadow: 0px 0.3px 0px #fff;
+    //transition: all 400ms ease-in-out;
+  }
+
+  input:focus, textarea:focus{
+    border: 1px solid #ceb8b8;
   }
 
   input{
@@ -113,7 +147,7 @@ form{
   textarea{
     min-height: 200px;
     line-height: 22px;
-    width: 370px;
+    width: 320px;
   }
 
 }
@@ -530,6 +564,10 @@ h1#my_name_small {
     background-color: blue;
   }
 
+  #the_contact_area{
+    width: 70vw;
+  }
+
   .all_my_work{
     width: 80vw;
   }
@@ -652,6 +690,7 @@ h1#my_name_small {
   }
 }
 
+
 @media screen and (max-width: 750px) {
   body{
     background-color: orange;
@@ -701,12 +740,17 @@ h1#my_name_small {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background: radial-gradient(81.18% 74.32% at 72.22% 50%,
-        #ee6285 0%,
-        rgba(238, 98, 133, 0) 100%);
+    background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
     //background-color: #7e535e;
     transition: all ease-in-out 400ms;
+    //background-color: white;
+      
   }
+
+  #check:checked ~ nav{
+  left: 0;
+  }
+
   
   nav ul {
     display: flex;
@@ -718,7 +762,7 @@ h1#my_name_small {
     left: 0;
     text-align: center;
     top: 100px;
-
+    //background-color: red;
 
     li {
       width: 180px;
@@ -733,6 +777,7 @@ h1#my_name_small {
         text-shadow: 0px 0px 1px #fff;
         font-size: 20px;
         transition: all ease-in-out 400ms;
+        border: 1px solid white;
       }
 
       a:hover {
@@ -758,10 +803,6 @@ h1#my_name_small {
     right: 40px;
     z-index: 1;
     display: none;
-  }
-
-  #check:checked~nav {
-    left: 0;
   }
 
   .fa.fa-bars {
@@ -978,6 +1019,12 @@ h1#my_name_small {
     height: calc(100vh - 55px);
   }
 
+}
+
+@media screen and (max-width: 450px) {
+  #the_form textarea, #the_form input{
+    width: 250px;
+  }
 }
 
 footer{

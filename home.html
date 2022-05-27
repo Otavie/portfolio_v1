@@ -29,18 +29,18 @@
           <img id="otavie_logo" src="img/otavie_logo.png" alt="Design with Otavie" />
         </label>
         
-        <input type="checkbox" id="check" />
+        <input type="checkbox" id="check">
         <label for="check">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </label>
                 
-        <nav>
+        <nav id="nav">
           
           <ul>
             <li><a href="index.html">home</a></li>
-            <li><a href="#my_work_section">work</a></li>
-            <li><a href="#know_me_section">about me</a></li>
-            <li><a href="#lets_talk_section">let's talk</a></li>
+            <li><a href="#my_work_section" onclick="is_clicked()">work</a></li>
+            <li><a href="#know_me_section" onclick="is_clicked()">about me</a></li>
+            <li><a href="#lets_talk_section" onclick="is_clicked()">let's talk</a></li>
           </ul>
         </nav>
       </header>
@@ -158,17 +158,18 @@
         </div>
       
         <div id="the_contact_area">
-          <div class="contact_area_info"  id="contact_area_info">
-            <form id="the_form">
-              <input type="text" value="Your Full Name" name="Name" placeholder="Your Full Name" required>
-              <input type="email" value="Your Subject" name="Subject" placeholder="Your Subject" required>
-              <input type="email" value="Your Email Address" name="Email" placeholder="Your Email Address" required>
-              <textarea name="Message" placeholder="Your Message" required>Your Message</textarea>
+          <div class="contact_area_info"  id="contact_area_form">
+            <form action="https://formsubmit.co/d69dab3d73da7874a8c11f25cedec036" method="POST" id="the_form">
+              <input type="text" name="Name" placeholder="Your Full Name" required>
+              <input type="text" name="Subject" placeholder="Your Subject" required>
+              <input type="email" name="Email" placeholder="Your Email Address" required>
+              <textarea name="Message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Email</button>
             </form>
-            <button type="submit">Send Email</button>
+            
           </div>
   
-          <div class="contact_area_info" id="contact_area_info" >
+          <div class="contact_area_info" id="contact_area_details" >
             <div class="the_details">
               <img class="the_details_logo" src="img/call.png">
               <p>+23470 650 69495</p>
@@ -185,7 +186,7 @@
             </div>
 
             <div class="the_details">
-              <a href="https://github.com/Otavie"><img src="img/github_black.png" alt="GitHub"></a>
+              <a href="https://github.com/Otavie"><img src="img/gitHub_black.png" alt="GitHub"></a>
               <p>GitHub</p>
             </div>
 
@@ -203,7 +204,7 @@
     <footer>
       <div id="footer_content">
         <div id="socials">
-          <p><a href="https://github.com/Otavie"><img src="img/github_black.png" alt="GitHub"></a></p>
+          <p><a href="https://github.com/Otavie"><img src="img/gitHub_black.png" alt="GitHub"></a></p>
           <p><a href="https://www.linkedin.com/in/otavie"><img src="img/linkedIn_black.png" alt="LinkedIn"></a></p>
           <p><a href=""><img src="img/twitter_black.png" alt="Twitter"></a></p>
           <p><a href=""><img src="img/instagram_black.png"  alt="Instagram"></a></p>
@@ -219,6 +220,7 @@
 
         <div id="my_cv">
           <p>View my <a href="https://resume.io/r/ILrAX41Ui">Resume</a></p>
+          <p style="font-size: 12px; padding-top: 10px; text-align: center; font-weight: bold; text-shadow: 0px 0.3px 0px white;">&copy; Otavie 2022</p>
         </div>
 
       </div>
@@ -226,7 +228,7 @@
   </main>
 
 
-
+<script src="js/hide_menu.js"></script>
 </body>
 
 </html>
