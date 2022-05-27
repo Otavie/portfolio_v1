@@ -17,11 +17,7 @@ body {
   background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
 }
 
-#righthand_content #my_work a {
-  text-decoration: none;
-  color: #000;
-}
-
+/* ==== THE NAVIGATION ==== */
 .fa.fa-bars, #check {
   visibility: hidden;
 }
@@ -69,6 +65,12 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
+  color: #000;
+}
+
+/* ==== THE MAIN SECTION ==== */
+#righthand_content #my_work a {
+  text-decoration: none;
   color: #000;
 }
 
@@ -206,6 +208,7 @@ h1#my_name_small {
           justify-content: right;
 }
 
+/* ==== THE MEDIA QUERY SECTION ==== */
 @media screen and (max-width: 800px) {
   body, html, main {
     overflow-x: hidden;
@@ -380,9 +383,6 @@ h1#my_name_small {
 }
 
 @media screen and (max-width: 610px) {
-  body {
-    background-color: blueviolet;
-  }
   #inner_landing_content {
     height: 220px;
     width: 220px;
@@ -410,9 +410,6 @@ h1#my_name_small {
 }
 
 @media screen and (max-width: 560px) {
-  body {
-    background-color: yellow;
-  }
   #inner_landing_content {
     height: 210px;
     width: 210px;
@@ -441,7 +438,6 @@ h1#my_name_small {
 
 @media screen and (max-width: 500px) {
   body {
-    background-color: aquamarine;
     overflow-y: hidden;
   }
   #righthand_content #my_name h1 {
@@ -486,7 +482,6 @@ h1#my_name_small {
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgba(68, 15, 166, 0.85);
   }
   html {
     overflow: hidden;

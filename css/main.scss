@@ -20,15 +20,11 @@ body {
   );
 }
 
-#righthand_content #my_work a{
-  text-decoration: none;
-  color: #000;
-}
+/* ==== THE NAVIGATION ==== */
 
 .fa.fa-bars, #check{
   visibility: hidden;
 }
-
 
 #header {
   position: absolute;
@@ -37,14 +33,10 @@ body {
   left: 0px;
   top: 0px;
   background: rgba(228, 154, 173, 0.97);
-  //background: rgba(233, 122, 150, .97);
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
-
 }
 
 #logo #otavie_logo{
-  //filter: drop-shadow(0.5px 0.5px 0px rgb(0, 0, 0));
-  //filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
   filter: drop-shadow(0.5px 0.5px 0px rgb(255, 255, 255));
   z-index: 1;
 }
@@ -73,6 +65,13 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
+  color: #000;
+}
+
+/* ==== THE MAIN SECTION ==== */
+
+#righthand_content #my_work a{
+  text-decoration: none;
   color: #000;
 }
 
@@ -181,6 +180,8 @@ h1#my_name_small{
   justify-content: right;
 }
 
+/* ==== THE MEDIA QUERY SECTION ==== */
+
 @media screen and (max-width: 800px) {
   body, html, main{
     overflow-x: hidden;
@@ -209,7 +210,6 @@ h1#my_name_small{
   #righthand_content #my_name h1{
     font-size: 90px;
   }
-  
 }
 
 @media screen and (max-width: 785px){
@@ -245,7 +245,6 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 750px) {
-  
   nav {
     left: 100%;
     position: absolute;
@@ -281,7 +280,6 @@ h1#my_name_small{
         color: #000;
         padding: 10px 20px;
         cursor: pointer;
-        //text-shadow: 0px 0px 1px #ee6285;
         text-shadow: 0px 0px 1px #fff;
         font-size: 20px;
         transition: all ease-in-out 400ms;
@@ -289,7 +287,6 @@ h1#my_name_small{
 
       a:hover{
         font-size: 21px;
-        //text-shadow: 0px 0px 1px #fff; 
         text-shadow: 0px 0px 1px #ee6285;
       }
     }
@@ -362,7 +359,6 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 660px) {
-  
   #inner_landing_content{
     height: 240px;
     width: 240px;  
@@ -381,10 +377,6 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 610px) {
-  body{
-    background-color: blueviolet;
-  }
-
   #inner_landing_content{
     height: 220px;
     width: 220px;  
@@ -416,10 +408,6 @@ h1#my_name_small{
 }
 
 @media screen and (max-width: 560px) {
-  body{
-    background-color: yellow;
-  }
-
   #inner_landing_content{
     height: 210px;
     width: 210px;  
@@ -449,13 +437,10 @@ h1#my_name_small{
   #righthand_content #welcome h3{
     font-size: 15px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
-
   body{
-    background-color: aquamarine;
     overflow-y: hidden;
   }
 
@@ -502,13 +487,10 @@ h1#my_name_small{
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color:rgba(68, 15, 166, 0.85)
   }
 
-  
   html{
     overflow: hidden;
     height: calc(100vh - 55px);
-  }
-  
+  }  
 }
