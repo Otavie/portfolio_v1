@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
+}
+
+/* ==== THE NAVIGATION ==== */
+.fa.fa-bars, #check {
+  visibility: hidden;
+}
+
+#header {
+  position: absolute;
+  width: 100vw;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  background: rgba(228, 154, 173, 0.97);
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+#logo #otavie_logo {
+  -webkit-filter: drop-shadow(0.5px 0.5px 0px white);
+          filter: drop-shadow(0.5px 0.5px 0px white);
+  z-index: 1;
+}
+
+#logo img {
+  position: absolute;
+  width: 180px;
+  top: 12px;
+  left: 70px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-right: 70px;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 28px;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ==== THE MAIN SECTION ==== */
+#righthand_content #my_work a {
+  text-decoration: none;
+  color: #000;
+}
+
+#landing_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing_content {
+  margin-top: 60px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 70vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#inner_landing_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+h1#my_name_small {
+  display: none;
+}
+
+.otavie {
+  position: absolute;
+  height: 260px;
+  width: 260px;
+}
+
+#o {
+  height: 330px;
+  width: 330px;
+  z-index: -1;
+}
+
+#landing_photo {
+  z-index: -2;
+}
+
+#righthand_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#righthand_content #welcome h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 0px 0px 1px #fff;
+}
+
+#righthand_content #my_name h1 {
+  font-family: 'Oxanium', cursive;
+  font-size: 100px;
+  font-weight: 300;
+  text-shadow: 0px 0px 1.5px #086071;
+}
+
+#righthand_content #my_title h4 {
+  font-family: 'Oxanium', cursive;
+  color: #fff;
+}
+
+#righthand_content #my_work button {
+  font-family: 'Oxanium', cursive;
+  width: 135px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #000;
+  text-shadow: 0px 1px 0px #fff;
+  background: #A37781;
+  -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25), -2px -2px 20px rgba(0, 0, 0, 0.85);
+          box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25), -2px -2px 20px rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+
+#righthand_content #my_work button:hover {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+  background: #ee6285;
+}
+
+#righthand_content #welcome, #righthand_content #my_name {
+  margin-left: 20px;
+}
+
+#righthand_content #my_title {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+#righthand_content #my_title, #righthand_content #my_work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+/* ==== THE MEDIA QUERY SECTION ==== */
+@media screen and (max-width: 800px) {
+  body, html, main {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #inner_landing_content {
+    height: 300px;
+    width: 300px;
+  }
+  .otavie {
+    height: 240px;
+    width: 240px;
+  }
+  #o {
+    height: 300px;
+    width: 300px;
+  }
+  #righthand_content #welcome, #righthand_content #my_name {
+    margin-left: 12px;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  #righthand_content #welcome, #righthand_content #my_name {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #inner_landing_content {
+    height: 300px;
+    width: 300px;
+  }
+  .otavie {
+    height: 240px;
+    width: 240px;
+  }
+  #o {
+    height: 300px;
+    width: 300px;
+  }
+  #righthand_content #welcome, #righthand_content #my_name {
+    margin-left: 30px;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    left: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(81.18% 74.32% at 72.22% 50%, #ee6285 0%, rgba(238, 98, 133, 0) 100%);
+    -webkit-transition: all ease-in-out 400ms;
+    transition: all ease-in-out 400ms;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    text-align: center;
+    top: 100px;
+  }
+  nav ul li {
+    width: 180px;
+    height: 100px;
+    display: block;
+  }
+  nav ul li a {
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 0px 0px 1px #fff;
+    font-size: 20px;
+    -webkit-transition: all ease-in-out 400ms;
+    transition: all ease-in-out 400ms;
+  }
+  nav ul li a:hover {
+    font-size: 21px;
+    text-shadow: 0px 0px 1px #ee6285;
+  }
+  .fa.fa-bars, #check {
+    visibility: visible;
+    cursor: pointer;
+  }
+  #check {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    z-index: 1;
+    display: none;
+  }
+  #check:checked ~ nav {
+    left: 0;
+  }
+  .fa.fa-bars {
+    position: absolute;
+    top: 9.5px;
+    right: 40px;
+    font-size: 35px;
+    color: #000;
+    z-index: 5;
+  }
+  #inner_landing_content {
+    height: 280px;
+    width: 280px;
+  }
+  .otavie {
+    height: 220px;
+    width: 220px;
+  }
+  #o {
+    height: 280px;
+    width: 280px;
+  }
+  #righthand_content #welcome, #righthand_content #my_name {
+    margin-left: 12px;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 80px;
+  }
+  #righthand_content #my_work button {
+    width: 120px;
+    font-size: 18px;
+  }
+  #righthand_content #my_title {
+    font-size: 17px;
+  }
+  #righthand_content #welcome h3 {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #inner_landing_content {
+    height: 240px;
+    width: 240px;
+  }
+  .otavie {
+    height: 180px;
+    width: 180px;
+  }
+  #o {
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  #inner_landing_content {
+    height: 220px;
+    width: 220px;
+  }
+  .otavie {
+    height: 170px;
+    width: 170px;
+  }
+  #o {
+    height: 220px;
+    width: 220px;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 60px;
+  }
+  #righthand_content #my_title {
+    margin-top: -18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  #righthand_content #welcome, #righthand_content #my_name {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #inner_landing_content {
+    height: 210px;
+    width: 210px;
+  }
+  .otavie {
+    height: 150px;
+    width: 150px;
+  }
+  #o {
+    height: 200px;
+    width: 200px;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 50px;
+  }
+  #righthand_content #my_title {
+    margin-top: -10px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  #righthand_content #welcome h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-y: hidden;
+  }
+  #righthand_content #my_name h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #my_title h4 {
+    margin-top: -5px;
+  }
+  #my_work {
+    margin-top: 10px;
+  }
+  h1#my_name_big {
+    display: none;
+  }
+  h1#my_name_small {
+    display: block;
+  }
+  .landing_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #inner_landing_content {
+    margin-bottom: 10px;
+  }
+  #righthand_content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing_content {
+    margin-top: 20px;
+  }
+  main {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  html {
+    overflow: hidden;
+    height: calc(100vh - 55px);
+  }
+}
